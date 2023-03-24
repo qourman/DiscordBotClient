@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "npm run build:css && npm run build:js",
-    "build:css": "node-sass src/styles/main.scss public/css/main.css",
+    "build:css": "node-sass src/styles/main.scss public/css -o",
     "build:js": "babel src -d public/js"
   },
   "dependencies": {
