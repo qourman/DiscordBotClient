@@ -1,18 +1,43 @@
 {
-	"name": "discord-bot-client",
-	"version": "1.0.0",
-	"description": "Discord Bot Client - login into discord with a bot token",
-	"main": "localhost.js",
-	"scripts": {
-		"start": "node localhost.js"
-	},
-	"dependencies": {
-		"axios": "1.1",
-		"discord-protos": "^1.0.4",
-		"express": "^4.18.1",
-		"node-fetch": "^2.6.7",
-		"path": "^0.12.7",
-		"request": "^2.88.2",
-		"ws": "^8.12.1"
-	}
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "My awesome web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "node-sass src/styles/main.scss public/css/main.css",
+    "build:js": "babel src -d public/js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^6.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/my-web-app"
+  },
+  "keywords": [
+    "web",
+    "app"
+  ],
+  "license": "MIT",
+  "private": true,
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "homepage": "https://my-web-app.netlify.app",
+  "build": {
+    "publish": "public"
+  }
 }
